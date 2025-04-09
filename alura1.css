@@ -512,6 +512,9 @@ section.products1{
         width: 50px;
         height: 30px;
     }
+    .Stores-slider{
+        margin-top: 20px;
+    }
     }
 /* Submit Button */
 .buttonn {
@@ -607,6 +610,7 @@ section.products1{
         width: 90%;
         margin: 0 1rem;
     }
+
     .Stores-slider .slide .content h3{
         font-size: 7rem;
     }
@@ -632,6 +636,10 @@ section.products1{
         border-radius: 3rem;
     }
 }
+@media (min-width: 500px) and (max-width: 910px) {
+    .Stores-slider{
+        margin-top: 35px;
+    }}
 @media(max-width:360px){
     html{
         font-size: 35%;
