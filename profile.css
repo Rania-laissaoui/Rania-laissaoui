@@ -101,62 +101,51 @@ html {
  }
  
  
- #search-form {
-     position: fixed;
-     top: -110%;
-     left: 0;
-     height: 100%;
-     width: 100%;
-     z-index: 1004;
-     background: rgba(18, 16, 2, 0.4);
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     padding: 0 1rem;
-     transition: top 0.3s;
- }
- 
-
- #search-form #search-box {
-     width: 50rem;
-     font-family: monospace;
-     border-bottom: 0.1rem solid #fff;
-     padding: 1rem 0;
-     color: var(--brown);
-     font-size: 3rem;
-     text-transform: none;
-     background: none;
- }
- 
- #search-form #search-box::placeholder {
-     color: var(--brown);
- }
- 
- #search-form label {
-     color: #fff;
-     cursor: pointer;
-     font-size: 3rem;
- }
- 
- #search-form label:hover {
-     color: var(--brown);
- }
- 
-
- #search-form #close {
-     position: absolute;
-     top: 2rem;
-     right: 3rem;
-     font-size: 5rem;
-     color: #fff;
-     cursor: pointer;
-     transition: 0.3s;
- }
- 
- #search-form #close:hover {
-     color: var(--brown);
- }
- 
+ #search-form{
+    position: fixed;
+    top: -110%; left:0;
+    height: 100%; width: 100%;
+    z-index: 1004;
+    background: rgba(0, 0, 0, 0.669);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+}
+#search-form #search-box{
+    width: 50rem;
+    font-family: monospace;
+    border-bottom: 0.1rem solid #fff;
+    padding: 1rem 0;
+    color: var(--brown);
+    font-size: 3rem;
+    text-transform: none;
+    background: none;
+}
+#search-form #search-box::placeholder{
+    color: #fff;
+}
+#search-form #search-box::-webkit-search-cancel-button{
+    -webkit-appearance: none;
+}
+#search-form label{
+    color: #fff;
+    cursor: pointer;
+    font-size: 3rem;
+}
+#search-form label:hover{
+    color: var(--brown);
+}
+#search-form #close{
+    position: absolute;
+    color: #fff;
+    cursor: pointer;
+    top: 2rem; right: 3rem;
+    font-size: 5rem;
+}
+#search-form #close:hover{
+    color: var(--brown);
+}
 
  @media (max-width: 991px) {
      html {
@@ -209,12 +198,12 @@ html {
      }
  }
 .first{
-   margin-top: 60px ;
+   margin-top: 40px ;
    text-align: center;
 }
 
 .back{
-    
+   
    background-image: url(back.jpg);
     width: 100%;
     height: 160px;
@@ -252,7 +241,7 @@ html {
   margin: 30px 20px;
   width: 160px;
   height: 50px;
-  font-size: larger;
+  font-size: large;
 }
 .profile-actions button:hover {
     background: linear-gradient(to right, #A35C48, #D47460);
@@ -271,7 +260,8 @@ html {
    font-size: 14px;
 }
 .contact{
-    font-size: larger;
+    font-size: large; 
+    margin-bottom: 5px;
 }
 .first a{
    font-weight: bold;
@@ -580,6 +570,7 @@ section.productss{
     border-radius: 8rem;
     cursor: pointer;
     padding: .8rem 3rem;
+    font-size: larger;
 }
 
  .ll:hover{
@@ -730,6 +721,23 @@ section.productss{
     .comment-text {
         font-size: 14px;
     }
+
+    .profile-actions button{
+        margin-top: 2px;
+        background-color: #3d1d14;
+        color: white;
+        padding: 10px;
+        border: none;
+        cursor: pointer;
+        border-radius: 30px;
+      width: 160px;
+      height: 50px;
+      font-size: medium;
+    }
+    .first h1{
+        font-size: medium;
+    }
+   
 }
 footer {
     margin-bottom: 0;
@@ -922,4 +930,46 @@ footer a {
         font-size: 35%;
     }  
    
+}
+ .your{
+    color: var(--light);
+}
+@media(max-width:400px){
+
+     #commentForm {
+        font-size: small;height: max-content;
+         width:270px;z-index: 100;
+         padding: 15px;
+         position: fixed;
+         background: #3a1d1d;
+         border: 1px solid #5c2c21;
+         border-radius:50px 20px 50px 0px;
+         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+         top: 100px;
+         left: 4%;text-align: center;
+         transform: translateX(-50%);
+     }  
+     #rateForm {
+        font-size: small;height: max-content;
+        width:270px;z-index: 100;
+        padding: 15px;
+        position: fixed;
+        background: #3a1d1d;
+        border: 1px solid #5c2c21;
+        border-radius:50px 20px 50px 0px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        top: 100px;
+        left: 4%;text-align: center;
+        transform: translateX(-50%);
+    }}
+    @media (min-width:400px) and (max-width:630px)  {
+    #commentForm {
+       font-size: small;
+        left: 20%;
+        
+    }
+    #rateForm{
+        font-size: small;
+        left: 20%;
+    }
 }
