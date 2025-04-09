@@ -215,7 +215,7 @@ html {
 
 .back{
     
-   background-image: url(photo/back.jpg);
+   background-image: url(back.jpg);
     width: 100%;
     height: 160px;
     object-fit: cover;
