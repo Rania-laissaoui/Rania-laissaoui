@@ -512,7 +512,14 @@ section.products1{
         width: 50px;
         height: 30px;
     }
+    .Stores-slider{
+        margin-top: 20px;
     }
+    }
+    @media (min-width: 500px) and (max-width: 910px) {
+        .Stores-slider{
+            margin-top: 35px;
+        }}
 /* Submit Button */
 .buttonn {
     width: 100%;
